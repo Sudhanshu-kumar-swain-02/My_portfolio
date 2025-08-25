@@ -1080,3 +1080,12 @@ footer p {
     background-position: 100% 50%;
   }
 }
+
+.about-text {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.2;
+  font-weight: 360;
+  letter-spacing: 0.3px;
+}
