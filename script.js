@@ -110,76 +110,69 @@ document.addEventListener("DOMContentLoaded", () => {
     if (msg.includes("hello") || msg.includes("hi") || msg.includes("hey")) {
       return "Hello! 👋 I'm Sudhanshu's AI Assistant. How can I help you today?";
     }
-
+    // About coffee project
+    else if (
+      msg.includes("which technology use in cafe website") ||
+      msg.includes("technologies used") ||
+      msg.includes("about cafe website")
+    ) {
+      return "Our Café website is built using HTML for structure, CSS for styling, and JavaScript for interactivity. 🍵";
+    }
     // About Sudhanshu
-    if (msg.includes("about") || msg.includes("sudhanshu")) {
+    else if (msg.includes("about") || msg.includes("sudhanshu")) {
       return `Sudhanshu Kumar Swain is an MCA student, skilled in frontend and backend development. He loves building projects using HTML, CSS, JavaScript, React, Node.js, and more. 💻`;
     }
-
     // Portfolio / Projects
-    if (
+    else if (
       msg.includes("portfolio") ||
       msg.includes("projects") ||
       msg.includes("work")
     ) {
       return "You can check out Sudhanshu's latest projects in the Projects section above! 🚀";
     }
-
     // Skills
-    if (
+    else if (
       msg.includes("skills") ||
       msg.includes("tech") ||
       msg.includes("technology")
     ) {
       return "Sudhanshu's technical skills include HTML, CSS, JavaScript, React, Tailwind CSS, Node.js, Express.js, MongoDB, and Git. 🛠️";
     }
-
     // Contact
-    if (
+    else if (
       msg.includes("contact") ||
       msg.includes("email") ||
       msg.includes("message")
     ) {
-      return "You can contact Sudhanshu via the Contact section above or send a message using this chat! 📩";
+      return "You can contact Sudhanshu via the Contact section above or send a message using this chat!   -kumarswainsudhanshu@gmail.com📩";
     }
-
     // Hobbies / Interests
-    if (
+    else if (
       msg.includes("hobby") ||
       msg.includes("interest") ||
       msg.includes("like")
     ) {
       return "Sudhanshu enjoys coding, building projects, learning new technologies, and solving problems. 🔥";
     }
-
     // Fun responses
-    if (msg.includes("joke") || msg.includes("fun")) {
+    else if (msg.includes("joke") || msg.includes("fun")) {
       return "Why do programmers prefer dark mode? Because light attracts bugs! 😆";
-    }
-
-    if (msg.includes("thanks") || msg.includes("thank you")) {
+    } else if (msg.includes("thanks") || msg.includes("thank you")) {
       return "You're welcome! 😄 Always happy to help.";
-    }
-    if (msg.includes("jyoti") || msg.includes("thank you")) {
+    } else if (msg.includes("jyoti")) {
       return "Hey Jyoti! Hope you're having an amazing day! Always remember, your positivity lights up every room you enter. Keep shining! 🌟";
-    }
-    if (msg.includes("silan") || msg.includes("thank you")) {
+    } else if (msg.includes("silan")) {
       return "Hi Silan! Keep rocking your MCA journey. Coding, learning, and exploring new things—you're doing great! 💻🔥";
-    }
-    if (msg.includes("ompriya") || msg.includes("thank you")) {
+    } else if (msg.includes("ompriya")) {
       return "Hey Ompriya! Keep pushing yourself in MCA and enjoy every challenge. Your dedication is inspiring! 🚀";
-    }
-    if (msg.includes("lipun") || msg.includes("thank you")) {
-      return "You're welcome! 😄 Always happy to help. how is your DSA going";
-    }
-    if (msg.includes("lipsha") || msg.includes("thank you")) {
-      return "Hi Lipsha! Wishing you happiness, success, and tons of fun moments every day. Keep being awesome! 🌸Gaon ku kibe asiba ?";
-    }
-    if (msg.includes("who is soumya") || msg.includes("thank you")) {
-      return "Hey Soumya! Hope your days are filled with laughter and learning. Keep chasing your dreams! ✨ & tell me about Monalisha TATWA ";
-    }
-    if (msg.includes("good") || msg.includes("thank you")) {
-      return "that's great to here!";
+    } else if (msg.includes("lipun")) {
+      return "Hi Lipun! How is your DSA going? Keep coding and learning! 🔥";
+    } else if (msg.includes("lipsha")) {
+      return "Hi Lipsha! Wishing you happiness, success, and tons of fun moments every day. Keep being awesome! 🌸 Gaon ku kebe asiba?";
+    } else if (msg.includes("who is soumya")) {
+      return "Hey Soumya! Hope your days are filled with laughter and learning. Keep chasing your dreams! ✨ & tell me about Monalisha TATWA";
+    } else if (msg.includes("good")) {
+      return "That's great to hear!";
     }
 
     // Default fallback messages
@@ -195,4 +188,3 @@ document.addEventListener("DOMContentLoaded", () => {
     ];
   }
 });
-z;
